@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Aug 24 12:00:38 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : timer
+Top-level Entity Name : timer
+Family : Cyclone IV E
+Total logic elements : 165
+    Total combinational functions : 133
+    Dedicated logic registers : 100
+Total registers : 100
+Total pins : 73
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

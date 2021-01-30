@@ -1,0 +1,7 @@
+
+State Machine - |bus_top|bus_arbiter:bus_arbiter_|owner
+Name owner.11 owner.10 owner.01 owner.00 
+owner.00 0 0 0 0 
+owner.01 0 0 1 1 
+owner.10 0 1 0 1 
+owner.11 1 0 0 1 

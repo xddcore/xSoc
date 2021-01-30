@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Aug 20 15:06:38 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : mem_reg
+Top-level Entity Name : mem_reg
+Family : Cyclone IV E
+Total logic elements : 75
+    Total combinational functions : 75
+    Dedicated logic registers : 75
+Total registers : 75
+Total pins : 155
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

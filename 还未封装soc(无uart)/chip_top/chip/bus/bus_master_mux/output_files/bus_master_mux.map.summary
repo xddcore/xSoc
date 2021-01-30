@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Aug 15 12:11:02 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : bus_master_mux
+Top-level Entity Name : bus_master_mux
+Family : Cyclone IV E
+Total logic elements : 131
+    Total combinational functions : 131
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 324
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

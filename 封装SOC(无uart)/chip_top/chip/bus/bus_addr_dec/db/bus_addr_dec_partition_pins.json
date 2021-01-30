@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "s0_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s1_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s2_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s3_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s4_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s5_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s6_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s7_cs_",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[31]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[29]",
+					"strict" : false
+				},
+				{
+					"name" : "s_addr[30]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

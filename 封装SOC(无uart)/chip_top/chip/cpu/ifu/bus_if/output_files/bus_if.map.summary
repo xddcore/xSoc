@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 18 10:56:47 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : bus_if
+Top-level Entity Name : bus_if
+Family : Cyclone IV E
+Total logic elements : 182
+    Total combinational functions : 150
+    Dedicated logic registers : 101
+Total registers : 101
+Total pins : 296
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

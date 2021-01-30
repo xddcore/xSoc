@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Aug 15 12:11:10 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : bus_master_mux
+Top-level Entity Name : bus_master_mux
+Family : Cyclone IV E
+Device : EP4CE15F23C8
+Timing Models : Final
+Total logic elements : 131 / 15,408 ( < 1 % )
+    Total combinational functions : 131 / 15,408 ( < 1 % )
+    Dedicated logic registers : 0 / 15,408 ( 0 % )
+Total registers : 0
+Total pins : 324 / 344 ( 94 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

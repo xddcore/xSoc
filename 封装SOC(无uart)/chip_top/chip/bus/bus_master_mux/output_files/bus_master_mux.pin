@@ -1,0 +1,554 @@
+ -- Copyright (C) 2017  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+CHIP  "bus_master_mux"  ASSIGNED TO AN: EP4CE15F23C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+m3_addr[1]                   : A3        : input  : 2.5 V             :         : 8         : N              
+m0_addr[19]                  : A4        : input  : 2.5 V             :         : 8         : N              
+m3_addr[21]                  : A5        : input  : 2.5 V             :         : 8         : N              
+s_addr[26]                   : A6        : output : 2.5 V             :         : 8         : N              
+m1_addr[25]                  : A7        : input  : 2.5 V             :         : 8         : N              
+m2_addr[24]                  : A8        : input  : 2.5 V             :         : 8         : N              
+m0_addr[27]                  : A9        : input  : 2.5 V             :         : 8         : N              
+m1_as_                       : A10       : input  : 2.5 V             :         : 8         : N              
+GND+                         : A11       :        :                   :         : 8         :                
+m1_addr[21]                  : A12       : input  : 2.5 V             :         : 7         : N              
+s_addr[25]                   : A13       : output : 2.5 V             :         : 7         : N              
+m2_addr[12]                  : A14       : input  : 2.5 V             :         : 7         : N              
+s_wr_data[28]                : A15       : output : 2.5 V             :         : 7         : N              
+m2_wr_data[27]               : A16       : input  : 2.5 V             :         : 7         : N              
+m0_wr_data[28]               : A17       : input  : 2.5 V             :         : 7         : N              
+m3_addr[4]                   : A18       : input  : 2.5 V             :         : 7         : N              
+m1_addr[7]                   : A19       : input  : 2.5 V             :         : 7         : N              
+m2_addr[2]                   : A20       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A21       : power  :                   : 2.5V    : 7         :                
+GND                          : A22       : gnd    :                   :         :           :                
+m2_wr_data[20]               : AA1       : input  : 2.5 V             :         : 2         : N              
+GND                          : AA2       : gnd    :                   :         :           :                
+s_wr_data[3]                 : AA3       : output : 2.5 V             :         : 3         : N              
+m3_addr[6]                   : AA4       : input  : 2.5 V             :         : 3         : N              
+m0_addr[8]                   : AA5       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA6       : power  :                   : 2.5V    : 3         :                
+m0_addr[26]                  : AA7       : input  : 2.5 V             :         : 3         : N              
+s_wr_data[7]                 : AA8       : output : 2.5 V             :         : 3         : N              
+m2_wr_data[7]                : AA9       : input  : 2.5 V             :         : 3         : N              
+m0_wr_data[6]                : AA10      : input  : 2.5 V             :         : 3         : N              
+m3_wr_data[1]                : AA11      : input  : 2.5 V             :         : 3         : N              
+m0_wr_data[23]               : AA12      : input  : 2.5 V             :         : 4         : N              
+m1_wr_data[7]                : AA13      : input  : 2.5 V             :         : 4         : N              
+m3_wr_data[31]               : AA14      : input  : 2.5 V             :         : 4         : N              
+m0_grnt_                     : AA15      : input  : 2.5 V             :         : 4         : N              
+m2_wr_data[4]                : AA16      : input  : 2.5 V             :         : 4         : N              
+m0_wr_data[31]               : AA17      : input  : 2.5 V             :         : 4         : N              
+m1_wr_data[2]                : AA18      : input  : 2.5 V             :         : 4         : N              
+m0_addr[28]                  : AA19      : input  : 2.5 V             :         : 4         : N              
+s_wr_data[2]                 : AA20      : output : 2.5 V             :         : 4         : N              
+m1_rw                        : AA21      : input  : 2.5 V             :         : 5         : N              
+GND                          : AA22      : gnd    :                   :         :           :                
+GND                          : AB1       : gnd    :                   :         :           :                
+VCCIO3                       : AB2       : power  :                   : 2.5V    : 3         :                
+m2_addr[5]                   : AB3       : input  : 2.5 V             :         : 3         : N              
+m0_wr_data[11]               : AB4       : input  : 2.5 V             :         : 3         : N              
+m0_addr[10]                  : AB5       : input  : 2.5 V             :         : 3         : N              
+GND                          : AB6       : gnd    :                   :         :           :                
+m2_wr_data[5]                : AB7       : input  : 2.5 V             :         : 3         : N              
+m2_wr_data[8]                : AB8       : input  : 2.5 V             :         : 3         : N              
+m3_wr_data[6]                : AB9       : input  : 2.5 V             :         : 3         : N              
+m2_wr_data[6]                : AB10      : input  : 2.5 V             :         : 3         : N              
+m2_wr_data[1]                : AB11      : input  : 2.5 V             :         : 3         : N              
+m3_wr_data[24]               : AB12      : input  : 2.5 V             :         : 4         : N              
+m2_wr_data[31]               : AB13      : input  : 2.5 V             :         : 4         : N              
+m1_wr_data[8]                : AB14      : input  : 2.5 V             :         : 4         : N              
+m1_grnt_                     : AB15      : input  : 2.5 V             :         : 4         : N              
+m3_wr_data[5]                : AB16      : input  : 2.5 V             :         : 4         : N              
+m3_wr_data[4]                : AB17      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
+m0_addr[29]                  : AB19      : input  : 2.5 V             :         : 4         : N              
+m3_rw                        : AB20      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB21      : power  :                   : 2.5V    : 4         :                
+GND                          : AB22      : gnd    :                   :         :           :                
+m2_addr[19]                  : B1        : input  : 2.5 V             :         : 1         : N              
+s_addr[3]                    : B2        : output : 2.5 V             :         : 1         : N              
+s_addr[0]                    : B3        : output : 2.5 V             :         : 8         : N              
+m1_addr[19]                  : B4        : input  : 2.5 V             :         : 8         : N              
+s_addr[21]                   : B5        : output : 2.5 V             :         : 8         : N              
+m0_addr[24]                  : B6        : input  : 2.5 V             :         : 8         : N              
+m1_addr[26]                  : B7        : input  : 2.5 V             :         : 8         : N              
+m1_addr[27]                  : B8        : input  : 2.5 V             :         : 8         : N              
+m2_addr[21]                  : B9        : input  : 2.5 V             :         : 8         : N              
+m3_addr[27]                  : B10       : input  : 2.5 V             :         : 8         : N              
+GND+                         : B11       :        :                   :         : 8         :                
+m0_addr[21]                  : B12       : input  : 2.5 V             :         : 7         : N              
+m2_addr[23]                  : B13       : input  : 2.5 V             :         : 7         : N              
+m2_addr[26]                  : B14       : input  : 2.5 V             :         : 7         : N              
+s_addr[7]                    : B15       : output : 2.5 V             :         : 7         : N              
+m3_addr[2]                   : B16       : input  : 2.5 V             :         : 7         : N              
+m1_wr_data[27]               : B17       : input  : 2.5 V             :         : 7         : N              
+m3_wr_data[28]               : B18       : input  : 2.5 V             :         : 7         : N              
+m0_addr[12]                  : B19       : input  : 2.5 V             :         : 7         : N              
+m1_addr[2]                   : B20       : input  : 2.5 V             :         : 7         : N              
+m0_wr_data[18]               : B21       : input  : 2.5 V             :         : 6         : N              
+s_wr_data[17]                : B22       : output : 2.5 V             :         : 6         : N              
+s_addr[16]                   : C1        : output : 2.5 V             :         : 1         : N              
+m1_addr[1]                   : C2        : input  : 2.5 V             :         : 1         : N              
+m2_addr[3]                   : C3        : input  : 2.5 V             :         : 8         : N              
+m2_addr[1]                   : C4        : input  : 2.5 V             :         : 8         : N              
+GND                          : C5        : gnd    :                   :         :           :                
+s_addr[24]                   : C6        : output : 2.5 V             :         : 8         : N              
+s_addr[23]                   : C7        : output : 2.5 V             :         : 8         : N              
+s_addr[27]                   : C8        : output : 2.5 V             :         : 8         : N              
+GND                          : C9        : gnd    :                   :         :           :                
+s_as_                        : C10       : output : 2.5 V             :         : 8         : N              
+GND                          : C11       : gnd    :                   :         :           :                
+GND                          : C12       : gnd    :                   :         :           :                
+m1_addr[24]                  : C13       : input  : 2.5 V             :         : 7         : N              
+GND                          : C14       : gnd    :                   :         :           :                
+m3_addr[12]                  : C15       : input  : 2.5 V             :         : 7         : N              
+GND                          : C16       : gnd    :                   :         :           :                
+m1_addr[4]                   : C17       : input  : 2.5 V             :         : 7         : N              
+GND                          : C18       : gnd    :                   :         :           :                
+s_wr_data[29]                : C19       : output : 2.5 V             :         : 7         : N              
+m0_wr_data[13]               : C20       : input  : 2.5 V             :         : 6         : N              
+m2_wr_data[15]               : C21       : input  : 2.5 V             :         : 6         : N              
+m0_wr_data[16]               : C22       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 1         : N              
+m3_addr[19]                  : D2        : input  : 2.5 V             :         : 1         : N              
+GND                          : D3        : gnd    :                   :         :           :                
+VCCIO1                       : D4        : power  :                   : 2.5V    : 1         :                
+VCCIO8                       : D5        : power  :                   : 2.5V    : 8         :                
+m1_addr[16]                  : D6        : input  : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+GND                          : D8        : gnd    :                   :         :           :                
+VCCIO8                       : D9        : power  :                   : 2.5V    : 8         :                
+m3_addr[25]                  : D10       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : D11       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : D12       : power  :                   : 2.5V    : 7         :                
+m3_addr[24]                  : D13       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : D14       : power  :                   : 2.5V    : 7         :                
+m2_wr_data[28]               : D15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : D16       : power  :                   : 2.5V    : 7         :                
+s_wr_data[27]                : D17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : D18       : power  :                   : 2.5V    : 7         :                
+m0_addr[4]                   : D19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 6         :                
+m1_wr_data[15]               : D21       : input  : 2.5 V             :         : 6         : N              
+m1_wr_data[16]               : D22       : input  : 2.5 V             :         : 6         : N              
+s_addr[20]                   : E1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+m1_addr[11]                  : E3        : input  : 2.5 V             :         : 1         : N              
+s_addr[19]                   : E4        : output : 2.5 V             :         : 1         : N              
+m3_addr[16]                  : E5        : input  : 2.5 V             :         : 8         : N              
+s_addr[11]                   : E6        : output : 2.5 V             :         : 8         : N              
+m2_addr[20]                  : E7        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E8        : power  :                   : 2.5V    : 8         :                
+m3_addr[26]                  : E9        : input  : 2.5 V             :         : 8         : N              
+m0_as_                       : E10       : input  : 2.5 V             :         : 8         : N              
+m2_as_                       : E11       : input  : 2.5 V             :         : 7         : N              
+m0_addr[22]                  : E12       : input  : 2.5 V             :         : 7         : N              
+m0_addr[23]                  : E13       : input  : 2.5 V             :         : 7         : N              
+m0_wr_data[29]               : E14       : input  : 2.5 V             :         : 7         : N              
+m1_addr[12]                  : E15       : input  : 2.5 V             :         : 7         : N              
+s_wr_data[15]                : E16       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : E17       : power  :                   : 1.2V    :           :                
+GNDA2                        : E18       : gnd    :                   :         :           :                
+VCCIO6                       : E19       : power  :                   : 2.5V    : 6         :                
+GND                          : E20       : gnd    :                   :         :           :                
+m0_wr_data[15]               : E21       : input  : 2.5 V             :         : 6         : N              
+m0_wr_data[14]               : E22       : input  : 2.5 V             :         : 6         : N              
+m2_addr[16]                  : F1        : input  : 2.5 V             :         : 1         : N              
+m0_addr[0]                   : F2        : input  : 2.5 V             :         : 1         : N              
+GND                          : F3        : gnd    :                   :         :           :                
+VCCIO1                       : F4        : power  :                   : 2.5V    : 1         :                
+GNDA3                        : F5        : gnd    :                   :         :           :                
+VCCD_PLL3                    : F6        : power  :                   : 1.2V    :           :                
+m0_addr[3]                   : F7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
+m2_addr[25]                  : F10       : input  : 2.5 V             :         : 8         : N              
+m3_addr[22]                  : F11       : input  : 2.5 V             :         : 7         : N              
+m3_wr_data[27]               : F12       : input  : 2.5 V             :         : 7         : N              
+m2_addr[4]                   : F13       : input  : 2.5 V             :         : 7         : N              
+s_addr[4]                    : F14       : output : 2.5 V             :         : 7         : N              
+m3_addr[7]                   : F15       : input  : 2.5 V             :         : 7         : N              
+m2_wr_data[29]               : F16       : input  : 2.5 V             :         : 7         : N              
+m3_wr_data[17]               : F17       : input  : 2.5 V             :         : 6         : N              
+VCCA2                        : F18       : power  :                   : 2.5V    :           :                
+m1_wr_data[14]               : F19       : input  : 2.5 V             :         : 6         : N              
+m1_wr_data[17]               : F20       : input  : 2.5 V             :         : 6         : N              
+m3_wr_data[18]               : F21       : input  : 2.5 V             :         : 6         : N              
+m3_wr_data[13]               : F22       : input  : 2.5 V             :         : 6         : N              
+GND+                         : G1        :        :                   :         : 1         :                
+GND                          : G2        : gnd    :                   :         :           :                
+m0_addr[1]                   : G3        : input  : 2.5 V             :         : 1         : N              
+m3_addr[11]                  : G4        : input  : 2.5 V             :         : 1         : N              
+m2_addr[11]                  : G5        : input  : 2.5 V             :         : 1         : N              
+VCCA3                        : G6        : power  :                   : 2.5V    :           :                
+m1_addr[0]                   : G7        : input  : 2.5 V             :         : 8         : N              
+m1_addr[23]                  : G8        : input  : 2.5 V             :         : 8         : N              
+m1_addr[22]                  : G9        : input  : 2.5 V             :         : 8         : N              
+s_addr[22]                   : G10       : output : 2.5 V             :         : 8         : N              
+m0_addr[25]                  : G11       : input  : 2.5 V             :         : 8         : N              
+s_addr[2]                    : G12       : output : 2.5 V             :         : 7         : N              
+m0_addr[7]                   : G13       : input  : 2.5 V             :         : 7         : N              
+m0_addr[2]                   : G14       : input  : 2.5 V             :         : 7         : N              
+m2_addr[7]                   : G15       : input  : 2.5 V             :         : 7         : N              
+s_wr_data[12]                : G16       : output : 2.5 V             :         : 7         : N              
+s_wr_data[14]                : G17       : output : 2.5 V             :         : 6         : N              
+m2_wr_data[16]               : G18       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : G19       : power  :                   : 2.5V    : 6         :                
+GND                          : G20       : gnd    :                   :         :           :                
+m1_wr_data[13]               : G21       : input  : 2.5 V             :         : 6         : N              
+m2_wr_data[13]               : G22       : input  : 2.5 V             :         : 6         : N              
+m2_wr_data[23]               : H1        : input  : 2.5 V             :         : 1         : N              
+s_wr_data[26]                : H2        : output : 2.5 V             :         : 1         : N              
+GND                          : H3        : gnd    :                   :         :           :                
+VCCIO1                       : H4        : power  :                   : 2.5V    : 1         :                
+m0_addr[16]                  : H5        : input  : 2.5 V             :         : 1         : N              
+m3_addr[3]                   : H6        : input  : 2.5 V             :         : 1         : N              
+m0_addr[11]                  : H7        : input  : 2.5 V             :         : 1         : N              
+GND                          : H8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
+m2_addr[27]                  : H10       : input  : 2.5 V             :         : 8         : N              
+m2_addr[22]                  : H11       : input  : 2.5 V             :         : 8         : N              
+s_addr[12]                   : H12       : output : 2.5 V             :         : 7         : N              
+m1_wr_data[28]               : H13       : input  : 2.5 V             :         : 7         : N              
+m1_wr_data[29]               : H14       : input  : 2.5 V             :         : 7         : N              
+m0_wr_data[27]               : H15       : input  : 2.5 V             :         : 7         : N              
+s_wr_data[18]                : H16       : output : 2.5 V             :         : 6         : N              
+s_wr_data[16]                : H17       : output : 2.5 V             :         : 6         : N              
+m2_wr_data[17]               : H18       : input  : 2.5 V             :         : 6         : N              
+m1_wr_data[18]               : H19       : input  : 2.5 V             :         : 6         : N              
+m0_wr_data[17]               : H20       : input  : 2.5 V             :         : 6         : N              
+m2_wr_data[18]               : H21       : input  : 2.5 V             :         : 6         : N              
+m3_wr_data[15]               : H22       : input  : 2.5 V             :         : 6         : N              
+m0_wr_data[26]               : J1        : input  : 2.5 V             :         : 1         : N              
+m3_as_                       : J2        : input  : 2.5 V             :         : 1         : N              
+m1_wr_data[22]               : J3        : input  : 2.5 V             :         : 1         : N              
+m2_wr_data[26]               : J4        : input  : 2.5 V             :         : 1         : N              
+GND                          : J5        : gnd    :                   :         :           :                
+m3_addr[20]                  : J6        : input  : 2.5 V             :         : 1         : N              
+m1_addr[3]                   : J7        : input  : 2.5 V             :         : 1         : N              
+VCCINT                       : J8        : power  :                   : 1.2V    :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+VCCINT                       : J13       : power  :                   : 1.2V    :           :                
+VCCINT                       : J14       : power  :                   : 1.2V    :           :                
+m2_wr_data[14]               : J15       : input  : 2.5 V             :         : 6         : N              
+m1_addr[17]                  : J16       : input  : 2.5 V             :         : 6         : N              
+m0_wr_data[12]               : J17       : input  : 2.5 V             :         : 6         : N              
+m3_wr_data[16]               : J18       : input  : 2.5 V             :         : 6         : N              
+GND                          : J19       : gnd    :                   :         :           :                
+VCCIO6                       : J20       : power  :                   : 2.5V    : 6         :                
+m3_wr_data[14]               : J21       : input  : 2.5 V             :         : 6         : N              
+m0_addr[17]                  : J22       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K1        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : K2        : output : 2.5 V             :         : 1         : N              
+GND                          : K3        : gnd    :                   :         :           :                
+VCCIO1                       : K4        : power  :                   : 2.5V    : 1         :                
+nCONFIG                      : K5        :        :                   :         : 1         :                
+nSTATUS                      : K6        :        :                   :         : 1         :                
+s_addr[1]                    : K7        : output : 2.5 V             :         : 1         : N              
+m0_addr[20]                  : K8        : input  : 2.5 V             :         : 1         : N              
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+GND                          : K11       : gnd    :                   :         :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCINT                       : K14       : power  :                   : 1.2V    :           :                
+m0_addr[15]                  : K15       : input  : 2.5 V             :         : 6         : N              
+m2_wr_data[9]                : K16       : input  : 2.5 V             :         : 6         : N              
+m3_wr_data[12]               : K17       : input  : 2.5 V             :         : 6         : N              
+s_wr_data[13]                : K18       : output : 2.5 V             :         : 6         : N              
+s_wr_data[10]                : K19       : output : 2.5 V             :         : 6         : N              
+MSEL3                        : K20       :        :                   :         : 6         :                
+s_addr[13]                   : K21       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : K22       : output : 2.5 V             :         : 6         : N              
+TMS                          : L1        : input  :                   :         : 1         :                
+TCK                          : L2        : input  :                   :         : 1         :                
+nCE                          : L3        :        :                   :         : 1         :                
+TDO                          : L4        : output :                   :         : 1         :                
+TDI                          : L5        : input  :                   :         : 1         :                
+m3_wr_data[21]               : L6        : input  : 2.5 V             :         : 2         : N              
+m1_wr_data[3]                : L7        : input  : 2.5 V             :         : 2         : N              
+m1_addr[20]                  : L8        : input  : 2.5 V             :         : 1         : N              
+VCCINT                       : L9        : power  :                   : 1.2V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+s_wr_data[9]                 : L15       : output : 2.5 V             :         : 6         : N              
+m1_addr[15]                  : L16       : input  : 2.5 V             :         : 6         : N              
+MSEL2                        : L17       :        :                   :         : 6         :                
+MSEL1                        : L18       :        :                   :         : 6         :                
+VCCIO6                       : L19       : power  :                   : 2.5V    : 6         :                
+GND                          : L20       : gnd    :                   :         :           :                
+m1_addr[14]                  : L21       : input  : 2.5 V             :         : 6         : N              
+m0_wr_data[10]               : L22       : input  : 2.5 V             :         : 6         : N              
+s_wr_data[23]                : M1        : output : 2.5 V             :         : 2         : N              
+m0_wr_data[19]               : M2        : input  : 2.5 V             :         : 2         : N              
+m1_wr_data[21]               : M3        : input  : 2.5 V             :         : 2         : N              
+s_wr_data[19]                : M4        : output : 2.5 V             :         : 2         : N              
+m1_wr_data[20]               : M5        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M6        :        :                   :         : 2         :                
+m3_wr_data[25]               : M7        : input  : 2.5 V             :         : 2         : N              
+s_wr_data[20]                : M8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+s_wr_data[30]                : M15       : output : 2.5 V             :         : 5         : N              
+m3_addr[15]                  : M16       : input  : 2.5 V             :         : 5         : N              
+MSEL0                        : M17       :        :                   :         : 6         :                
+CONF_DONE                    : M18       :        :                   :         : 6         :                
+m3_wr_data[9]                : M19       : input  : 2.5 V             :         : 5         : N              
+m0_addr[13]                  : M20       : input  : 2.5 V             :         : 5         : N              
+m2_wr_data[10]               : M21       : input  : 2.5 V             :         : 5         : N              
+s_addr[15]                   : M22       : output : 2.5 V             :         : 5         : N              
+m2_wr_data[21]               : N1        : input  : 2.5 V             :         : 2         : N              
+m0_wr_data[24]               : N2        : input  : 2.5 V             :         : 2         : N              
+GND                          : N3        : gnd    :                   :         :           :                
+VCCIO2                       : N4        : power  :                   : 2.5V    : 2         :                
+m1_wr_data[26]               : N5        : input  : 2.5 V             :         : 2         : N              
+m3_wr_data[19]               : N6        : input  : 2.5 V             :         : 2         : N              
+s_wr_data[31]                : N7        : output : 2.5 V             :         : 2         : N              
+s_wr_data[22]                : N8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+m2_addr[29]                  : N14       : input  : 2.5 V             :         : 5         : N              
+m3_addr[18]                  : N15       : input  : 2.5 V             :         : 5         : N              
+m3_addr[17]                  : N16       : input  : 2.5 V             :         : 5         : N              
+m3_wr_data[10]               : N17       : input  : 2.5 V             :         : 5         : N              
+m1_wr_data[10]               : N18       : input  : 2.5 V             :         : 5         : N              
+m1_addr[18]                  : N19       : input  : 2.5 V             :         : 5         : N              
+m2_addr[14]                  : N20       : input  : 2.5 V             :         : 5         : N              
+m3_addr[13]                  : N21       : input  : 2.5 V             :         : 5         : N              
+m2_addr[15]                  : N22       : input  : 2.5 V             :         : 5         : N              
+m2_wr_data[24]               : P1        : input  : 2.5 V             :         : 2         : N              
+m0_wr_data[20]               : P2        : input  : 2.5 V             :         : 2         : N              
+m1_wr_data[19]               : P3        : input  : 2.5 V             :         : 2         : N              
+m2_wr_data[19]               : P4        : input  : 2.5 V             :         : 2         : N              
+m1_wr_data[24]               : P5        : input  : 2.5 V             :         : 2         : N              
+m0_addr[9]                   : P6        : input  : 2.5 V             :         : 2         : N              
+m1_addr[9]                   : P7        : input  : 2.5 V             :         : 2         : N              
+s_addr[8]                    : P8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+m2_addr[28]                  : P14       : input  : 2.5 V             :         : 5         : N              
+m1_addr[28]                  : P15       : input  : 2.5 V             :         : 5         : N              
+m0_rw                        : P16       : input  : 2.5 V             :         : 5         : N              
+m2_wr_data[30]               : P17       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : P18       : power  :                   : 2.5V    : 5         :                
+GND                          : P19       : gnd    :                   :         :           :                
+m3_addr[14]                  : P20       : input  : 2.5 V             :         : 5         : N              
+m2_addr[17]                  : P21       : input  : 2.5 V             :         : 5         : N              
+m2_addr[18]                  : P22       : input  : 2.5 V             :         : 5         : N              
+m2_wr_data[22]               : R1        : input  : 2.5 V             :         : 2         : N              
+m1_wr_data[25]               : R2        : input  : 2.5 V             :         : 2         : N              
+GND                          : R3        : gnd    :                   :         :           :                
+VCCIO2                       : R4        : power  :                   : 2.5V    : 2         :                
+m2_addr[8]                   : R5        : input  : 2.5 V             :         : 2         : N              
+m0_addr[6]                   : R6        : input  : 2.5 V             :         : 2         : N              
+m3_wr_data[20]               : R7        : input  : 2.5 V             :         : 2         : N              
+m2_wr_data[3]                : R8        : input  : 2.5 V             :         : 2         : N              
+m2_wr_data[11]               : R9        : input  : 2.5 V             :         : 3         : N              
+s_wr_data[11]                : R10       : output : 2.5 V             :         : 3         : N              
+m3_addr[8]                   : R11       : input  : 2.5 V             :         : 3         : N              
+m2_addr[6]                   : R12       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
+s_wr_data[0]                 : R14       : output : 2.5 V             :         : 4         : N              
+s_addr[28]                   : R15       : output : 2.5 V             :         : 4         : N              
+m2_wr_data[2]                : R16       : input  : 2.5 V             :         : 4         : N              
+m1_wr_data[0]                : R17       : input  : 2.5 V             :         : 5         : N              
+m0_wr_data[9]                : R18       : input  : 2.5 V             :         : 5         : N              
+m1_wr_data[9]                : R19       : input  : 2.5 V             :         : 5         : N              
+m0_addr[14]                  : R20       : input  : 2.5 V             :         : 5         : N              
+m2_addr[13]                  : R21       : input  : 2.5 V             :         : 5         : N              
+s_addr[14]                   : R22       : output : 2.5 V             :         : 5         : N              
+m2_addr[0]                   : T1        : input  : 2.5 V             :         : 2         : N              
+m3_addr[0]                   : T2        : input  : 2.5 V             :         : 2         : N              
+s_wr_data[21]                : T3        : output : 2.5 V             :         : 2         : N              
+m0_wr_data[25]               : T4        : input  : 2.5 V             :         : 2         : N              
+m3_addr[9]                   : T5        : input  : 2.5 V             :         : 2         : N              
+VCCA1                        : T6        : power  :                   : 2.5V    :           :                
+m0_addr[5]                   : T7        : input  : 2.5 V             :         : 2         : N              
+m2_addr[10]                  : T8        : input  : 2.5 V             :         : 3         : N              
+s_addr[9]                    : T9        : output : 2.5 V             :         : 3         : N              
+m3_addr[23]                  : T10       : input  : 2.5 V             :         : 3         : N              
+m1_wr_data[5]                : T11       : input  : 2.5 V             :         : 3         : N              
+m1_wr_data[31]               : T12       : input  : 2.5 V             :         : 4         : N              
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4         :                
+m2_wr_data[0]                : T15       : input  : 2.5 V             :         : 4         : N              
+m1_addr[29]                  : T16       : input  : 2.5 V             :         : 4         : N              
+s_rw                         : T17       : output : 2.5 V             :         : 5         : N              
+m3_addr[29]                  : T18       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : T19       : power  :                   : 2.5V    : 5         :                
+GND                          : T20       : gnd    :                   :         :           :                
+m1_wr_data[12]               : T21       : input  : 2.5 V             :         : 5         : N              
+m2_wr_data[12]               : T22       : input  : 2.5 V             :         : 5         : N              
+s_wr_data[25]                : U1        : output : 2.5 V             :         : 2         : N              
+m3_wr_data[26]               : U2        : input  : 2.5 V             :         : 2         : N              
+GND                          : U3        : gnd    :                   :         :           :                
+VCCIO2                       : U4        : power  :                   : 2.5V    : 2         :                
+GNDA1                        : U5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
+m1_addr[10]                  : U7        : input  : 2.5 V             :         : 3         : N              
+m0_wr_data[3]                : U8        : input  : 2.5 V             :         : 3         : N              
+s_addr[6]                    : U9        : output : 2.5 V             :         : 3         : N              
+s_wr_data[8]                 : U10       : output : 2.5 V             :         : 3         : N              
+m3_wr_data[7]                : U11       : input  : 2.5 V             :         : 3         : N              
+m3_wr_data[8]                : U12       : input  : 2.5 V             :         : 4         : N              
+m3_wr_data[29]               : U13       : input  : 2.5 V             :         : 4         : N              
+m0_wr_data[2]                : U14       : input  : 2.5 V             :         : 4         : N              
+m0_wr_data[30]               : U15       : input  : 2.5 V             :         : 4         : N              
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+VCCA4                        : U18       : power  :                   : 2.5V    :           :                
+m1_wr_data[1]                : U19       : input  : 2.5 V             :         : 5         : N              
+m1_wr_data[30]               : U20       : input  : 2.5 V             :         : 5         : N              
+m0_addr[18]                  : U21       : input  : 2.5 V             :         : 5         : N              
+s_addr[18]                   : U22       : output : 2.5 V             :         : 5         : N              
+m0_wr_data[21]               : V1        : input  : 2.5 V             :         : 2         : N              
+m3_wr_data[22]               : V2        : input  : 2.5 V             :         : 2         : N              
+m3_wr_data[11]               : V3        : input  : 2.5 V             :         : 2         : N              
+m2_wr_data[25]               : V4        : input  : 2.5 V             :         : 2         : N              
+m3_wr_data[3]                : V5        : input  : 2.5 V             :         : 3         : N              
+m1_addr[8]                   : V6        : input  : 2.5 V             :         : 3         : N              
+m3_addr[10]                  : V7        : input  : 2.5 V             :         : 3         : N              
+m1_wr_data[4]                : V8        : input  : 2.5 V             :         : 3         : N              
+m0_wr_data[8]                : V9        : input  : 2.5 V             :         : 3         : N              
+s_wr_data[4]                 : V10       : output : 2.5 V             :         : 3         : N              
+s_wr_data[5]                 : V11       : output : 2.5 V             :         : 3         : N              
+m0_wr_data[7]                : V12       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                
+m1_wr_data[6]                : V14       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4         :                
+m0_wr_data[1]                : V16       : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : V17       : power  :                   : 1.2V    :           :                
+GNDA4                        : V18       : gnd    :                   :         :           :                
+VCCIO5                       : V19       : power  :                   : 2.5V    : 5         :                
+GND                          : V20       : gnd    :                   :         :           :                
+s_addr[17]                   : V21       : output : 2.5 V             :         : 5         : N              
+m1_addr[13]                  : V22       : input  : 2.5 V             :         : 5         : N              
+m1_wr_data[23]               : W1        : input  : 2.5 V             :         : 2         : N              
+m0_wr_data[22]               : W2        : input  : 2.5 V             :         : 2         : N              
+GND                          : W3        : gnd    :                   :         :           :                
+VCCIO2                       : W4        : power  :                   : 2.5V    : 2         :                
+VCCIO3                       : W5        : power  :                   : 2.5V    : 3         :                
+m3_addr[5]                   : W6        : input  : 2.5 V             :         : 3         : N              
+m1_wr_data[11]               : W7        : input  : 2.5 V             :         : 3         : N              
+s_addr[5]                    : W8        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : W9        : power  :                   : 2.5V    : 3         :                
+m0_wr_data[4]                : W10       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : W11       : power  :                   : 2.5V    : 3         :                
+VCCIO4                       : W12       : power  :                   : 2.5V    : 4         :                
+m2_grnt_                     : W13       : input  : 2.5 V             :         : 4         : N              
+s_wr_data[6]                 : W14       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W15       :        :                   :         : 4         :                
+VCCIO4                       : W16       : power  :                   : 2.5V    : 4         :                
+s_wr_data[1]                 : W17       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : W18       : power  :                   : 2.5V    : 4         :                
+m0_wr_data[0]                : W19       : input  : 2.5 V             :         : 5         : N              
+m3_wr_data[0]                : W20       : input  : 2.5 V             :         : 5         : N              
+m3_addr[28]                  : W21       : input  : 2.5 V             :         : 5         : N              
+m3_wr_data[30]               : W22       : input  : 2.5 V             :         : 5         : N              
+s_wr_data[24]                : Y1        : output : 2.5 V             :         : 2         : N              
+m3_wr_data[23]               : Y2        : input  : 2.5 V             :         : 2         : N              
+m1_addr[5]                   : Y3        : input  : 2.5 V             :         : 3         : N              
+m2_addr[9]                   : Y4        : input  : 2.5 V             :         : 3         : N              
+GND                          : Y5        : gnd    :                   :         :           :                
+s_addr[10]                   : Y6        : output : 2.5 V             :         : 3         : N              
+m1_addr[6]                   : Y7        : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3         :                
+GND                          : Y9        : gnd    :                   :         :           :                
+m0_wr_data[5]                : Y10       : input  : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+GND                          : Y12       : gnd    :                   :         :           :                
+m3_grnt_                     : Y13       : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : Y14       : power  :                   : 2.5V    : 4         :                
+GND                          : Y15       : gnd    :                   :         :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+s_addr[29]                   : Y17       : output : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+VCCIO5                       : Y19       : power  :                   : 2.5V    : 5         :                
+GND                          : Y20       : gnd    :                   :         :           :                
+m3_wr_data[2]                : Y21       : input  : 2.5 V             :         : 5         : N              
+m2_rw                        : Y22       : input  : 2.5 V             :         : 5         : N              

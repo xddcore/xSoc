@@ -1,0 +1,43 @@
+|bus_addr_dec
+s_addr[0] => ~NO_FANOUT~
+s_addr[1] => ~NO_FANOUT~
+s_addr[2] => ~NO_FANOUT~
+s_addr[3] => ~NO_FANOUT~
+s_addr[4] => ~NO_FANOUT~
+s_addr[5] => ~NO_FANOUT~
+s_addr[6] => ~NO_FANOUT~
+s_addr[7] => ~NO_FANOUT~
+s_addr[8] => ~NO_FANOUT~
+s_addr[9] => ~NO_FANOUT~
+s_addr[10] => ~NO_FANOUT~
+s_addr[11] => ~NO_FANOUT~
+s_addr[12] => ~NO_FANOUT~
+s_addr[13] => ~NO_FANOUT~
+s_addr[14] => ~NO_FANOUT~
+s_addr[15] => ~NO_FANOUT~
+s_addr[16] => ~NO_FANOUT~
+s_addr[17] => ~NO_FANOUT~
+s_addr[18] => ~NO_FANOUT~
+s_addr[19] => ~NO_FANOUT~
+s_addr[20] => ~NO_FANOUT~
+s_addr[21] => ~NO_FANOUT~
+s_addr[22] => ~NO_FANOUT~
+s_addr[23] => ~NO_FANOUT~
+s_addr[24] => ~NO_FANOUT~
+s_addr[25] => ~NO_FANOUT~
+s_addr[26] => ~NO_FANOUT~
+s_addr[27] => ~NO_FANOUT~
+s_addr[28] => ~NO_FANOUT~
+s_addr[29] => Decoder0.IN2
+s_addr[30] => Decoder0.IN1
+s_addr[31] => Decoder0.IN0
+s0_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s1_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s2_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s3_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s4_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s5_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s6_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s7_cs_ << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

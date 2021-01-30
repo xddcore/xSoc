@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/code/xSoc/chip_top/chip/bus/top/simulation/modelsim
+vbus_addr_dec
+Z1 !s110 1597474201
+!i10b 1
+!s100 LWUO@FG<RA8G10?ako0i90
+IaLJFG^4j?>MJWnYoa<Yih0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1597470361
+8E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec/bus_addr_dec.v
+FE:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec/bus_addr_dec.v
+L0 5
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1597474201.000000
+!s107 E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec/../../../global_config.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec/bus_addr_dec.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec/bus_addr_dec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec/bus_addr_dec.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_addr_dec
+Z6 tCvgOpt 0
+vbus_arbiter
+R1
+!i10b 1
+!s100 H_1YDdModOTQdW;?k?^Aj1
+IGXmizA8Mi>DOh5z`fNGJD1
+R2
+R0
+w1597460612
+8E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter/bus_arbiter.v
+FE:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter/bus_arbiter.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter/bus_arbiter.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter/../../../global_config.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter/bus_arbiter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter/bus_arbiter.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_arbiter
+R6
+vbus_master_mux
+R1
+!i10b 1
+!s100 `9d2a@@6AZg@ffH@d@SBo2
+IhMZm5HYziS@WF:[n;;8jf2
+R2
+R0
+w1597464641
+8E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux/bus_master_mux.v
+FE:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux/bus_master_mux.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux/bus_master_mux.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux/../../../global_config.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux/bus_master_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux/bus_master_mux.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_master_mux
+R6
+vbus_slave_mux
+R1
+!i10b 1
+!s100 0m3XeXNTKhH:_?LJM4]j^2
+I13UX0:[o7H4j50l8MKAd91
+R2
+R0
+w1597467584
+8E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux/bus_slave_mux.v
+FE:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux/bus_slave_mux.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux/bus_slave_mux.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux/../../../global_config.h|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux/bus_slave_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux|E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux/bus_slave_mux.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/bus_slave_mux
+R6
+vbus_top
+R1
+!i10b 1
+!s100 Ib>FhjKDKbO>6HUDO<_?73
+IKLWO>>TTC3K?j5IIRMfM03
+R2
+R0
+w1597473974
+8E:/FPGA/code/xSoc/chip_top/chip/bus/top/bus_top.v
+FE:/FPGA/code/xSoc/chip_top/chip/bus/top/bus_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/FPGA/code/xSoc/chip_top/chip/bus/top/bus_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/top|E:/FPGA/code/xSoc/chip_top/chip/bus/top/bus_top.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+E:/FPGA/code/xSoc/chip_top/chip/bus/top
+R6

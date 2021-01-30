@@ -1,0 +1,41 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'xsoc_rom_clock'
+Slack : -2.602
+TNS   : -83.264
+
+Type  : Slow 1200mV 85C Model Hold 'xsoc_rom_clock'
+Slack : 3.089
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'xsoc_rom_clock'
+Slack : -3.201
+TNS   : -158.135
+
+Type  : Slow 1200mV 0C Model Setup 'xsoc_rom_clock'
+Slack : -2.275
+TNS   : -72.800
+
+Type  : Slow 1200mV 0C Model Hold 'xsoc_rom_clock'
+Slack : 2.813
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'xsoc_rom_clock'
+Slack : -3.201
+TNS   : -158.135
+
+Type  : Fast 1200mV 0C Model Setup 'xsoc_rom_clock'
+Slack : -0.324
+TNS   : -10.368
+
+Type  : Fast 1200mV 0C Model Hold 'xsoc_rom_clock'
+Slack : 1.049
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'xsoc_rom_clock'
+Slack : -3.000
+TNS   : -57.768
+
+------------------------------------------------------------

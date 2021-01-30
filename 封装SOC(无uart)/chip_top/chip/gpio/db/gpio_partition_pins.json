@@ -1,0 +1,233 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rd_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "rdy_",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[0]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[1]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[2]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[3]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[4]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[5]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[6]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[7]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[8]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[9]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[10]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[11]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[12]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[13]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[14]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio_io[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rw",
+					"strict" : false
+				},
+				{
+					"name" : "cs_",
+					"strict" : false
+				},
+				{
+					"name" : "as_",
+					"strict" : false
+				},
+				{
+					"name" : "addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

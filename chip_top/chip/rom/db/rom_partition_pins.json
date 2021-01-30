@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "xsoc_rom_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[23]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[24]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[25]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[26]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[27]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[28]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[29]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[30]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_data[31]",
+					"strict" : false
+				},
+				{
+					"name" : "rdy_",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_clock",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "xsoc_rom_addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "cs_",
+					"strict" : false
+				},
+				{
+					"name" : "as_",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

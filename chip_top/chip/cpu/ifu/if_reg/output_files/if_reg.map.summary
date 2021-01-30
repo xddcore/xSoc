@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 18 10:55:58 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : if_reg
+Top-level Entity Name : if_reg
+Family : Cyclone IV E
+Total logic elements : 93
+    Total combinational functions : 93
+    Dedicated logic registers : 63
+Total registers : 63
+Total pins : 160
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

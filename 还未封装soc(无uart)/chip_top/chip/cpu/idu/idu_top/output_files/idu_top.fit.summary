@@ -1,0 +1,16 @@
+Fitter Status : Failed - Wed Aug 19 10:08:24 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : idu_top
+Top-level Entity Name : idu_top
+Family : Cyclone IV E
+Device : EP4CE15F23C8
+Timing Models : Final
+Total logic elements : 223 / 15,408 ( 1 % )
+    Total combinational functions : 223 / 15,408 ( 1 % )
+    Dedicated logic registers : 41 / 15,408 ( < 1 % )
+Total registers : 41
+Total pins : 397 / 344 ( 115 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

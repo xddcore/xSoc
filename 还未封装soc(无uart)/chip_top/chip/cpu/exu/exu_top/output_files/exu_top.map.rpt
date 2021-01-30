@@ -1,0 +1,386 @@
+Analysis & Synthesis report for exu_top
+Thu Aug 20 13:57:36 2020
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "alu:alu_0"
+ 12. Port Connectivity Checks: "ex_reg:ex_reg_0"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Aug 20 13:57:36 2020           ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
+; Revision Name                      ; exu_top                                         ;
+; Top-level Entity Name              ; exu_top                                         ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 536                                             ;
+;     Total combinational functions  ; 536                                             ;
+;     Dedicated logic registers      ; 78                                              ;
+; Total registers                    ; 78                                              ;
+; Total pins                         ; 260                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE15F23C8       ;                    ;
+; Top-level entity name                                                      ; exu_top            ; exu_top            ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; ../../isa.h                      ; yes             ; User File              ; E:/FPGA/code/xSoc/chip_top/chip/cpu/isa.h                 ;         ;
+; ../../cpu.h                      ; yes             ; User File              ; E:/FPGA/code/xSoc/chip_top/chip/cpu/cpu.h                 ;         ;
+; ../../../../global_config.h      ; yes             ; User File              ; E:/FPGA/code/xSoc/chip_top/global_config.h                ;         ;
+; ../alu/alu.v                     ; yes             ; User Verilog HDL File  ; E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/alu/alu.v         ;         ;
+; ../ex_reg/ex_reg.v               ; yes             ; User Verilog HDL File  ; E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/ex_reg/ex_reg.v   ;         ;
+; exu_top.v                        ; yes             ; User Verilog HDL File  ; E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Estimated Total logic elements              ; 536                  ;
+;                                             ;                      ;
+; Total combinational functions               ; 536                  ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 287                  ;
+;     -- 3 input functions                    ; 128                  ;
+;     -- <=2 input functions                  ; 121                  ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 504                  ;
+;     -- arithmetic mode                      ; 32                   ;
+;                                             ;                      ;
+; Total registers                             ; 78                   ;
+;     -- Dedicated logic registers            ; 78                   ;
+;     -- I/O registers                        ; 0                    ;
+;                                             ;                      ;
+; I/O pins                                    ; 260                  ;
+;                                             ;                      ;
+; Embedded Multiplier 9-bit elements          ; 0                    ;
+;                                             ;                      ;
+; Maximum fan-out node                        ; id_alu_in_1[1]~input ;
+; Maximum fan-out                             ; 105                  ;
+; Total fan-out                               ; 2425                 ;
+; Average fan-out                             ; 2.14                 ;
++---------------------------------------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
+; |exu_top                   ; 536 (0)             ; 78 (0)                    ; 0           ; 0            ; 0       ; 0         ; 260  ; 0            ; |exu_top                 ; exu_top     ; work         ;
+;    |alu:alu_0|             ; 448 (448)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exu_top|alu:alu_0       ; alu         ; work         ;
+;    |ex_reg:ex_reg_0|       ; 88 (88)             ; 78 (78)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exu_top|ex_reg:ex_reg_0 ; ex_reg      ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; ex_reg:ex_reg_0|ex_out[1..31]          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 31 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 78    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 78    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 78    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+; 4:1                ; 46 bits   ; 92 LEs        ; 92 LEs               ; 0 LEs                  ; Yes        ; |exu_top|ex_reg:ex_reg_0|ex_dst_addr[1] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |exu_top|alu:alu_0|Add0                 ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |exu_top|alu:alu_0|Mux21                ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |exu_top|alu:alu_0|Mux12                ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |exu_top|alu:alu_0|Mux24                ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |exu_top|alu:alu_0|Mux7                 ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |exu_top|alu:alu_0|Mux28                ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |exu_top|alu:alu_0|Mux2                 ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |exu_top|alu:alu_0|Mux30                ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 14 LEs               ; 6 LEs                  ; No         ; |exu_top|alu:alu_0|Mux1                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_0"                                                                                                               ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ex_reg:ex_reg_0"                                                                                                                                    ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                           ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; alu_out ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "alu_out[31..1]" will be connected to GND. ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 260                         ;
+; cycloneiii_ff         ; 78                          ;
+;     ENA CLR           ; 78                          ;
+; cycloneiii_lcell_comb ; 537                         ;
+;     arith             ; 32                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 31                          ;
+;     normal            ; 505                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 120                         ;
+;         3 data inputs ; 97                          ;
+;         4 data inputs ; 287                         ;
+;                       ;                             ;
+; Max LUT depth         ; 14.00                       ;
+; Average LUT depth     ; 9.09                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+    Info: Processing started: Thu Aug 20 13:57:25 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off exu_top -c exu_top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga/code/xsoc/chip_top/chip/cpu/exu/alu/alu.v
+    Info (12023): Found entity 1: alu File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/alu/alu.v Line: 4
+Critical Warning (10191): Verilog HDL Compiler Directive warning at ex_reg.v(100): text macro "WOAD_DATA_W" is undefined File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/ex_reg/ex_reg.v Line: 100
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga/code/xsoc/chip_top/chip/cpu/exu/ex_reg/ex_reg.v
+    Info (12023): Found entity 1: ex_reg File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/ex_reg/ex_reg.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file exu_top.v
+    Info (12023): Found entity 1: exu_top File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at exu_top.v(91): created implicit net for "alu_of" File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 91
+Info (12127): Elaborating entity "exu_top" for the top level hierarchy
+Info (12128): Elaborating entity "ex_reg" for hierarchy "ex_reg:ex_reg_0" File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 120
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_0" File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 133
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ex_out[1]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[2]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[3]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[4]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[5]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[6]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[7]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[8]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[9]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[10]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[11]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[12]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[13]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[14]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[15]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[16]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[17]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[18]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[19]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[20]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[21]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[22]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[23]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[24]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[25]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[26]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[27]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[28]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[29]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[30]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+    Warning (13410): Pin "ex_out[31]" is stuck at GND File: E:/FPGA/code/xSoc/chip_top/chip/cpu/exu/exu_top/exu_top.v Line: 64
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 796 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 150 input pins
+    Info (21059): Implemented 110 output pins
+    Info (21061): Implemented 536 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4773 megabytes
+    Info: Processing ended: Thu Aug 20 13:57:36 2020
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
+
+

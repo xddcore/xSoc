@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Aug 24 13:43:07 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : gpio
+Top-level Entity Name : gpio
+Family : Cyclone IV E
+Device : EP4CE15F23C8
+Timing Models : Final
+Total logic elements : 35 / 15,408 ( < 1 % )
+    Total combinational functions : 19 / 15,408 ( < 1 % )
+    Dedicated logic registers : 33 / 15,408 ( < 1 % )
+Total registers : 33
+Total pins : 88 / 344 ( 26 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

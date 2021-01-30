@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at timer.v(64): always construct contains both blocking and non-blocking assignments File: E:/FPGA/code/xSoc/chip_top/chip/timer/timer.v Line: 64

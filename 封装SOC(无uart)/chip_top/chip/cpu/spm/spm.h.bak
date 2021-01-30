@@ -1,0 +1,5 @@
+`define SPM_SIZE 16384 //spm容量
+`define SPM_DEPTH 4096 //spm容量
+`define SPM_ADDR_W 12 //spm位宽
+`define SpmAddrBus 11:0 //spmz总线
+`define SpmAddrLoc 11:0 //spm地址位置
